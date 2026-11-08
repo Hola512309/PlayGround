@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#100d20">
+  <title>Moonlit Afterhours — A Midnight Romance</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Moonlit Afterhours home"><span class="brand-moon">☾</span> MOONLIT <i>AFTERHOURS</i></a>
+      <div class="top-actions"><span class="chapter-label" id="chapter-label">A STORY GAME</span><button class="icon-button" id="sound-toggle" aria-label="Toggle ambient sound" title="Ambient sound">♫</button><button class="icon-button" id="restart-top" aria-label="Restart game" title="Restart">↻</button></div>
+    </header>
+    <section class="stage" id="stage" aria-live="polite">
+      <div class="scene-art" id="scene-art" aria-hidden="true">
+        <div class="city-glow"></div><div class="moon"></div><div class="window-frame"><span></span><span></span><span></span><span></span></div>
+        <div class="rain" id="rain"></div><div class="counter"></div><div class="plant"><i></i><i></i><i></i><b></b></div>
+        <div class="portrait" id="portrait"><div class="hair-back"></div><div class="body"></div><div class="neck"></div><div class="face"><i class="fringe"></i><i class="eye eye-left"></i><i class="eye eye-right"></i><i class="blush blush-left"></i><i class="blush blush-right"></i><i class="mouth"></i></div><div class="hair-front"></div><div class="earring"></div><div class="collar"></div></div>
+        <div class="steam steam-one"></div><div class="steam steam-two"></div><div class="cup"><span>✦</span></div>
+        <div class="art-caption" id="art-caption">THE LAST TRAIN HAS LEFT</div>
+      </div>
+      <div class="story-panel" id="story-panel">
+        <div class="eyebrow" id="eyebrow">A MOONLIT STORY · ALL CHARACTERS 21+</div>
+        <h1 id="story-title">The city is<br><em>still awake.</em></h1>
+        <p class="story-copy" id="story-copy">Rain taps the windows of the little after-hours café. You came for a quiet cup of tea. The owner, your old friend Mina, has other plans.</p>
+        <div class="story-meta" id="story-meta"><span>✦</span> A cozy, choice-driven romance <b>·</b> 5–8 min</div>
+        <div class="choices" id="choices"><button class="choice primary" id="start-button"><span>Begin the evening</span><b>→</b></button></div>
+        <div class="story-footer" id="story-footer"><span>♡</span> A little charm goes a long way.</div>
+      </div>
+      <div class="hud hidden" id="hud"><div class="bond-label"><span>✦</span> YOUR BOND <b id="bond-number">0</b></div><div class="bond-track"><i id="bond-fill"></i></div><div class="bond-note" id="bond-note">A fresh start</div></div>
+    </section>
+    <footer class="site-footer"><span>✦ A SMALL STORY ABOUT BIG FEELINGS</span><span>NO WRONG ANSWERS · JUST YOURS</span></footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
